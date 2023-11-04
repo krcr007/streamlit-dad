@@ -2,6 +2,6 @@ faiss-cpu
 langchain
 
 google-generativeai
-
+huggingface
 InstructorEmbedding
 transformers
