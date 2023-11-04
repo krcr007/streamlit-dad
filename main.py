@@ -1,6 +1,6 @@
 import streamlit as st
-pip install faiss-cpu
-pip install langchain
+pip install streamlit faiss-cpu langchain
+
 from langchain_helper import get_qa_chain, create_vector_db
 
   # For CPU version
