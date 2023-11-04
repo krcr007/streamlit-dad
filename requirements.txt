@@ -4,3 +4,4 @@ langchain
 google-generativeai
 HuggingFaceInstructEmbeddings
 InstructorEmbedding
+transformers
