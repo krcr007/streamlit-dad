@@ -1,4 +1,4 @@
 faiss-cpu
 langchain
-GOOGLE_API_KEY="AIzaSyCE8GPxkKGibdVtSpL4SooR_7hS7auBzWI"
+
 google-generativeai
