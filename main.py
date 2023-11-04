@@ -1,5 +1,11 @@
 import streamlit as st
+pip install faiss-cpu
+pip install langchain
 from langchain_helper import get_qa_chain, create_vector_db
+
+  # For CPU version
+
+
 
 # Set Streamlit app title and page icon
 st.set_page_config(
