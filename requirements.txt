@@ -6,3 +6,4 @@ huggingface
 InstructorEmbedding
 transformers
 hkunlp/instructor-large
+torch
