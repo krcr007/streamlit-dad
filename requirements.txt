@@ -5,3 +5,4 @@ google-generativeai
 huggingface
 InstructorEmbedding
 transformers
+hkunlp/instructor-large
