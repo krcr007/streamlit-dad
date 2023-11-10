@@ -34,6 +34,12 @@ def get_qa_chain():
     # Create a retriever for querying the vector database
     retriever = vectordb.as_retriever(score_threshold=0.7)
 
+    # Assuming INSTRUCTOR expects features with integer indices
+    # Modify the features accordingly
+    def embedding_function(text):
+        features = {'input_ids': [1, 2, 3], 'attention_mask': [1, 1, 1]}
+        return instructor_embeddings(features)
+
     prompt_template = """Given the following context and a question, generate an answer based on this context only.
     In the answer try to provide as much text as possible from "response" section in the source document context without making much changes.
     If the answer is not found in the context, kindly state "Please contact the HR for the above question" Don't try to make up an answer.
@@ -51,9 +57,10 @@ def get_qa_chain():
                                         retriever=retriever,
                                         input_key="query",
                                         return_source_documents=True,
-                                        chain_type_kwargs={"prompt": PROMPT})
+                                        chain_type_kwargs={"prompt": PROMPT, "embedding_function": embedding_function})
 
     return chain
+
 
 if __name__ == "__main__":
     create_vector_db()
