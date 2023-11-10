@@ -11,7 +11,7 @@ import os
 llm = GooglePalm(google_api_key="AIzaSyCE8GPxkKGibdVtSpL4SooR_7hS7auBzWI", temperature=0.1)
 # # Initialize instructor embeddings using the Hugging Face model
 from InstructorEmbedding import INSTRUCTOR
-model = INSTRUCTOR('hkunlp/instructor-large')
+instructor_embeddings = INSTRUCTOR('hkunlp/instructor-large')
 vectordb_file_path = "faiss_index"
 
 def create_vector_db():
