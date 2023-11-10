@@ -1,11 +1,5 @@
 import streamlit as st
-
-
 from langchain_helper import get_qa_chain, create_vector_db
-
-  # For CPU version
-
-
 
 # Set Streamlit app title and page icon
 st.set_page_config(
@@ -18,7 +12,7 @@ st.title("UKL Q and A")
 st.markdown("Ask your questions and get answers!")
 
 # Create a sidebar for additional options
-
+create_db = st.sidebar.checkbox("Create Knowledgebase", False)
 
 # Create a container for the main content
 main_container = st.container()
