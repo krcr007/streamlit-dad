@@ -18,8 +18,7 @@ st.title("UKL Q and A")
 st.markdown("Ask your questions and get answers!")
 
 # Create a sidebar for additional options
-st.sidebar.header("Options")
-create_db = st.sidebar.button("Create Knowledgebase")
+
 
 # Create a container for the main content
 main_container = st.container()
