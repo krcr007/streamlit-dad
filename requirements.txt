@@ -1,9 +1,8 @@
 faiss-cpu
 langchain
-
+sentence-transformers
 google-generativeai
 huggingface
 InstructorEmbedding
 transformers
-
 torch
